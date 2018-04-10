@@ -20,9 +20,11 @@ export class HomePage {
   ngOnInit(){
     this.loadFurniture();
   }
-
+  //functionload furniture
   loadFurniture(){
+    //diambil dari furnitureList yang kemudian ditampung
     this.furnitureList = [];
+    //memanggil furniture provider
     this.furnitureProvider.loadFurniture(this.categorySelected)
       .subscribe((result)=>{
         console.log(result);
