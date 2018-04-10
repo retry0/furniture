@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {Furniture} from "../../model/furniture";
 import {FurnitureProvider} from "../../providers/furniture/furniture";
-import {containerStart} from "@angular/core/src/render3/instructions";
+//import {containerStart} from "@angular/core/src/render3/instructions";
 
 @Component({
   selector: 'page-home',

@@ -21,7 +21,7 @@ export class FurnitureProvider {
   //function mengload furniture dengan object cat_id
   loadFurniture(cat_id:string){
     //mengambil url http + object_id
-    return this.http.get("http://localhost:8081/api/category" +cat_id + "/furniture")
+    return this.http.get("http://localhost:8081/api/category/" +cat_id+ "/furniture")
       .map((response: Response)=>{
         // deklarsi data sama dengan varible response yang merupakan json
         let data = response.json();
