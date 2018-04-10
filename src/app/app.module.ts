@@ -14,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { FurnitureProvider } from '../providers/furniture/furniture';
 //menabahkan modul http
 import {HttpModule} from "@angular/http";
+import { UserProvider } from '../providers/user/user';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {HttpModule} from "@angular/http";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FurnitureProvider
+    FurnitureProvider,
+    UserProvider
   ]
 })
 export class AppModule {}
