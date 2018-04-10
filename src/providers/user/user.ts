@@ -26,5 +26,21 @@ export class UserProvider {
       },
         (error)=>console.log(error));
   }
+  //tambah user
+  addUser(data){
+    var url = "http://localhost:8081/api/user";
+    return this.http.post(url, data);
+  }
+  //function delete dengan obeject userid
+  deleteUser(userid){
+    //rest api
+    var url ="http://localhost:8081/api/user" + userid;
+    return this.http.delete(url);
+  }
+
+  updateUser(userid, data){
+    var url ="http://localhost:8081/api/user" + userid;
+    return this.http.post(url, data);
+  }
 
 }

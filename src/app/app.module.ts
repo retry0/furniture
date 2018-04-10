@@ -15,6 +15,8 @@ import { FurnitureProvider } from '../providers/furniture/furniture';
 //menabahkan modul http
 import {HttpModule} from "@angular/http";
 import { UserProvider } from '../providers/user/user';
+import {ContactUpdatePage} from "../pages/contact-update/contact-update";
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { UserProvider } from '../providers/user/user';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ContactPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { UserProvider } from '../providers/user/user';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ContactUpdatePage
   ],
   providers: [
     StatusBar,
