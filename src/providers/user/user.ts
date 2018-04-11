@@ -11,7 +11,7 @@ import{User} from "../../model/user";
 */
 @Injectable()
 export class UserProvider {
-  private userList: User[] = [];
+  private userlist: User[] = [];
 
   constructor(public http: Http) {
     console.log('Hello UserProvider Provider');
@@ -21,7 +21,7 @@ export class UserProvider {
     return this.http.get("http://localhost:8081/api/user")
       .map((response: Response)=>{
         let data = response.json();
-        this.userList = data;
+        this.userlist = data;
         return data;
       },
         (error)=>console.log(error));

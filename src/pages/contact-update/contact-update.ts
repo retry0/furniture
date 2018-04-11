@@ -17,34 +17,36 @@ import {User} from "../../model/user";
 })
 export class ContactUpdatePage {
 //deklars variable
-  private  userlist: User[] = [];
-  private  useremail: string="";
-  private  userpassword: string="";
-  private name:string="";
+  private userlist: User[] = [];
+  private useremail: string = "";
+  private userpassword: string = "";
+  private name: string = "";
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
               private  userProvider: UserProvider) {
 
-    //inject variabel
-    var data = navParams.data;
-    this.userid = data.userid;
-    this.useremail = data.useremail;
-    this.userpassword = data.userpassword;
-    this.name = data.name;
+    /* //inject variabel
+     var data = navParams.data;
+     this.userid = data.userid;
+     this.useremail = data.useremail;
+     this.userpassword = data.userpassword;
+     this.name = data.name;
+   }
+
+   ionViewDidLoad() {
+     console.log('ionViewDidLoad ContactUpdatePage');
+   }
+
+   //function update user
+   updateUser(){
+     //variabel data yang berisi user password dan name
+     var data ={
+       "userpassword": this.userpassword,
+       "name": this.name
+     }
+   }
+
+
+ */
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactUpdatePage');
-  }
-
-  //function update user
-  updateUser(){
-    //variabel data yang berisi user password dan name
-    var data ={
-      "userpassword": this.userpassword,
-      "name": this.name
-    }
-  }
-
-
-
 }

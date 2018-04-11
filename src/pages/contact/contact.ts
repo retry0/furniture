@@ -11,9 +11,9 @@ import{ContactUpdatePage} from "../contact-update/contact-update";
 export class ContactPage {
   //deklars variable
   private  userlist: User[] = [];
-  private  useremail: string="";
-  private  userpassword: string="";
-  private name:string="";
+  //private  useremail: string="";
+  //private  userpassword: string="";
+ // private name:string="";
 
   constructor(public navCtrl: NavController,
               public userProvider: UserProvider,
@@ -32,7 +32,7 @@ export class ContactPage {
       });
     console.log(this.userlist);
   }
-
+/*
   addUser(){
     console.log("adduser");
     //variable data berisi useremail, userpassword dan name yang dipanggil dari variable yang sudah dideklarsikan
@@ -66,7 +66,7 @@ export class ContactPage {
       this.loadUser();
     })
     modal.present();
-  }
+  }*/
 
 
 

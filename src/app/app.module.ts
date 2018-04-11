@@ -25,7 +25,8 @@ import {ContactUpdatePage} from "../pages/contact-update/contact-update";
     ContactPage,
     HomePage,
     TabsPage,
-    ContactPage
+    ContactPage,
+    ContactUpdatePage
   ],
   imports: [
     BrowserModule,

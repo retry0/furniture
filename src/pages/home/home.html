@@ -10,6 +10,8 @@
    <ion-select [(ngModel)]="categorySelected" (ionChange)="loadFurniture()">
     <ion-option value="1">Armchair</ion-option>
    <ion-option value="2"> Sofa</ion-option>
+     <!--pilih category 3-->
+     <ion-option value="3"> Table</ion-option>
    </ion-select>
  </ion-item>
   <ion-card *ngFor="let furniture of furnitureList">

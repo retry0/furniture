@@ -1,12 +1,12 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Data User
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<!--tambah user-->
+<!--tambah user
 <ion-content>
   <ion-list>
     <ion-list-header>
@@ -30,19 +30,16 @@
     </div>
 
   </ion-list>
-</ion-content>
+</ion-content>-->
 
 <!--view user-->
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let data of userlist">
-      <ion-avatar item-start>
-        <ion-icon name="ios-contant" item-end></ion-icon>
-      </ion-avatar>
-      <h2>{{data.name}}</h2>
-      <p>{{data.useremail}}</p>
-      <button ion-button clear item-end (click)="viewUser(data)">View</button>
-      <button ion-button clear item-end (click)="deleteUser(data.userid)">Delete</button>
-    </ion-item>
+      <ion-item *ngFor="let data of userlist">
+        <p>{{data.name}}</p>
+        <p>{{data.useremail}}</p>
+      <button ion-button clear item-end>View</button>
+      <button ion-button clear item-end>Delete</button>
+      </ion-item>
   </ion-list>
 </ion-content>

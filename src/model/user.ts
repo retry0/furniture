@@ -3,7 +3,7 @@ export class User{
     public userid:string ="",
     public useremail :string="",
     public userpassword : string="",
-    public name : ""
+    public name : string= ""
   ){
 
   }
